@@ -1,0 +1,22 @@
+{
+  "kiliansplatz": {
+    "costs": {
+      "Mo": [
+        {
+          "from": 0,
+          "to": 6,
+          "parkTime": {
+            "from": 0,
+            "to": 360
+          },
+          "fees": [
+            {
+              "fee": 3,
+              "unit": 360
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
