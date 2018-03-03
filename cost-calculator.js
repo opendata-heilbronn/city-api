@@ -3,7 +3,7 @@ const moment = require("moment");
 function calcWeekDayCost(tarif, weekDayTarif, request) {
     const parkStart = moment(request.fromTime);
     const parkEnd = moment(request.fromTime).add(request.duration, "minutes");
-
+    
     const context = {
         cost: 0,
         parkDuration: 0
@@ -27,20 +27,20 @@ function calcWeekDayCost(tarif, weekDayTarif, request) {
 
         parkStart.add(fee.unit, "minutes");
     }
-
+    
     return {cost: context.cost, endTime: parkStart};
 }
 
 
 function calcCost(tarif, request) {
-    if (tarif.costs.ALL) {
-        return calcWeekDayCost(tarif, tarif.costs.ALL, request);
-    } else {
-        const fromTime = moment(request.fromTime);
-        const dow = fromTime.format("ddd");
-        const dowTarif = tarif.costs[dow];
-        return calcWeekDayCost(tarif, dowTarif, request);
-    }
+    const fromTime = moment(request.fromTime);
+    const dow = fromTime.format("ddd");
+
+    const data = tarif.costs.find(function(element) { 
+        return  element.dayOfWeek.indexOf(dow) != -1
+    });
+
+    return calcWeekDayCost(tarif, data.cost, request);
 }
 
 module.exports = {calcCost};
