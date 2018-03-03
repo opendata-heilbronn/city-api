@@ -5,6 +5,23 @@
     "scrapeLabel": "City-Parkhaus Experimenta",
     "access": [
       "Bahnhofstraße 6"
+    ],
+    "open": [
+      {
+        "days": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"
+        ],
+        "times": {
+          "from": 0,
+          "to": 24
+        }
+      }
     ]
   },
   {
@@ -13,6 +30,23 @@
     "scrapeLabel": "Am Bollwerksturm",
     "access": [
       "Mannheimer Straße 25"
+    ],
+    "open": [
+      {
+        "days": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"
+        ],
+        "times": {
+          "from": 0,
+          "to": 24
+        }
+      }
     ]
   },
   {
@@ -21,6 +55,23 @@
     "scrapeLabel": "Wollhaus",
     "access": [
       "Allee"
+    ],
+    "open": [
+      {
+        "days": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"
+        ],
+        "times": {
+          "from": 0,
+          "to": 24
+        }
+      }
     ]
   },
   {
@@ -30,7 +81,24 @@
     "access": [
       "Allerheiligenstraße",
       "Deutschhofstraße"
-    ]
+    ],
+    "open": [
+      {
+        "days": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"
+        ],
+        "times": {
+          "from": 8,
+          "to": 2
+        }
+      }
+    ] 
   },
   {
     "name": "Harmonie",
@@ -38,6 +106,31 @@
     "scrapeLabel": "Harmonie",
     "access": [
       "Gymnasiumstraße"
+    ],
+    "open": [
+      {
+        "days": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat"
+        ],
+        "times": {
+          "from": 7.5,
+          "to": 2
+        }
+      },
+      {
+        "days": [
+          "Sun"
+        ],
+        "times": {
+          "from": 9,
+          "to": 2
+        }
+      }
     ]
   },
   {
@@ -46,6 +139,22 @@
     "scrapeLabel": "Käthchenhof",
     "access": [
       "Gerberstraße"
+    ],
+    "open": [
+      {
+        "days": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat"
+        ],
+        "times": {
+          "from": 8,
+          "to": 20
+        }
+      }
     ]
   },
   {
@@ -55,6 +164,31 @@
     "access": [
       "Mannheimer Straße",
       "Gartenstraße"
+    ],
+    "open": [
+      {
+        "days": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat"
+        ],
+        "times": {
+          "from": 6,
+          "to": 2
+        }
+      },
+      {
+        "days": [
+          "Sun"
+        ],
+        "times": {
+          "from": 10,
+          "to": 2
+        }
+      }
     ]
   },
   {
@@ -63,6 +197,23 @@
     "scrapeLabel": "Kiliansplatz",
     "access": [
       "Kilianstraße"
+    ],
+    "open": [
+      {
+        "days": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"
+        ],
+        "times": {
+          "from": 6,
+          "to": 22
+        }
+      }
     ]
   }
 ]
