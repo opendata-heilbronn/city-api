@@ -1,67 +1,84 @@
 {
   "Käthchenhof": {
     "open": {
-      "days":["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
       "times": {
         "from": 8,
         "to": 20
-      } 
+      }
     },
     "max": 15,
     "costs": {
-      "ALL": {
-        "from": 0,
-        "to": 24
-      },
-      "fees": [
+      "ALL": [
         {
-          "parkTime": {
-            "from": 0,
-            "to": 1440
-          },
-          "fee": 0.5,
-          "unit": 20
+          "from": 0,
+          "to": 24,
+          "fees": [
+            {
+              "parkTime": {
+                "from": 0,
+                "to": 1440
+              },
+              "fee": 0.5,
+              "unit": 20
+            }
+          ]
         }
       ]
     }
   },
   "kiliansplatz": {
     "open": {
-      "days":["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
       "times": {
         "from": 6,
         "to": 22
-      } 
+      }
     },
     "costs": {
       "Mon": [
         {
           "from": 0,
           "to": 6,
-          "parkTime": {
-            "from": 0,
-            "to": 360
-          },
           "fees": [
             {
+              "parkTime": {
+                "from": 0,
+                "to": 360
+              },
               "fee": 5,
               "unit": 360
             }
           ]
         },
         {
-          "from":6,
+          "from": 6,
           "to": 20,
           "fees": [
-            { 
+            {
               "parkTime": {
                 "from": 0,
                 "to": 99
               },
               "fee": 1.5,
               "unit": 50
-            }, 
-            { 
+            },
+            {
               "parkTime": {
                 "from": 100,
                 "to": 199
@@ -69,15 +86,15 @@
               "fee": 3,
               "unit": 99
             },
-            { 
+            {
               "parkTime": {
                 "from": 200,
                 "to": 299
               },
               "fee": 3,
               "unit": 99
-            }, 
-            { 
+            },
+            {
               "parkTime": {
                 "from": 300,
                 "to": 1440
@@ -90,46 +107,46 @@
         {
           "from": 20,
           "to": 24,
-          "parkTime": {
-            "from": 0,
-            "to": 240
-          },
           "fees": [
             {
+              "parkTime": {
+                "from": 0,
+                "to": 240
+              },
               "fee": 5,
               "unit": 240
             }
           ]
-        },
+        }
       ],
       "Tue": [
         {
           "from": 0,
           "to": 6,
-          "parkTime": {
-            "from": 0,
-            "to": 360
-          },
           "fees": [
             {
+              "parkTime": {
+                "from": 0,
+                "to": 360
+              },
               "fee": 5,
               "unit": 360
             }
           ]
         },
         {
-          "from":6,
+          "from": 6,
           "to": 20,
           "fees": [
-            { 
+            {
               "parkTime": {
                 "from": 0,
                 "to": 99
               },
               "fee": 1.5,
               "unit": 50
-            }, 
-            { 
+            },
+            {
               "parkTime": {
                 "from": 100,
                 "to": 199
@@ -137,15 +154,15 @@
               "fee": 3,
               "unit": 99
             },
-            { 
+            {
               "parkTime": {
                 "from": 200,
                 "to": 299
               },
               "fee": 3,
               "unit": 99
-            }, 
-            { 
+            },
+            {
               "parkTime": {
                 "from": 300,
                 "to": 1440
@@ -158,46 +175,46 @@
         {
           "from": 20,
           "to": 24,
-          "parkTime": {
-            "from": 0,
-            "to": 240
-          },
           "fees": [
             {
+              "parkTime": {
+                "from": 0,
+                "to": 240
+              },
               "fee": 5,
               "unit": 240
             }
           ]
-        },
+        }
       ],
       "Wed": [
         {
           "from": 0,
           "to": 6,
-          "parkTime": {
-            "from": 0,
-            "to": 360
-          },
           "fees": [
             {
+              "parkTime": {
+                "from": 0,
+                "to": 360
+              },
               "fee": 5,
               "unit": 360
             }
           ]
         },
         {
-          "from":6,
+          "from": 6,
           "to": 20,
           "fees": [
-            { 
+            {
               "parkTime": {
                 "from": 0,
                 "to": 99
               },
               "fee": 1.5,
               "unit": 50
-            }, 
-            { 
+            },
+            {
               "parkTime": {
                 "from": 100,
                 "to": 199
@@ -205,15 +222,15 @@
               "fee": 3,
               "unit": 99
             },
-            { 
+            {
               "parkTime": {
                 "from": 200,
                 "to": 299
               },
               "fee": 3,
               "unit": 99
-            }, 
-            { 
+            },
+            {
               "parkTime": {
                 "from": 300,
                 "to": 1440
@@ -226,46 +243,46 @@
         {
           "from": 20,
           "to": 24,
-          "parkTime": {
-            "from": 0,
-            "to": 240
-          },
           "fees": [
             {
+              "parkTime": {
+                "from": 0,
+                "to": 240
+              },
               "fee": 5,
               "unit": 240
             }
           ]
-        },
+        }
       ],
       "Thu": [
         {
           "from": 0,
           "to": 6,
-          "parkTime": {
-            "from": 0,
-            "to": 360
-          },
           "fees": [
             {
+              "parkTime": {
+                "from": 0,
+                "to": 360
+              },
               "fee": 5,
               "unit": 360
             }
           ]
         },
         {
-          "from":6,
+          "from": 6,
           "to": 20,
           "fees": [
-            { 
+            {
               "parkTime": {
                 "from": 0,
                 "to": 99
               },
               "fee": 1.5,
               "unit": 50
-            }, 
-            { 
+            },
+            {
               "parkTime": {
                 "from": 100,
                 "to": 199
@@ -273,15 +290,15 @@
               "fee": 3,
               "unit": 99
             },
-            { 
+            {
               "parkTime": {
                 "from": 200,
                 "to": 299
               },
               "fee": 3,
               "unit": 99
-            }, 
-            { 
+            },
+            {
               "parkTime": {
                 "from": 300,
                 "to": 1440
@@ -294,46 +311,46 @@
         {
           "from": 20,
           "to": 24,
-          "parkTime": {
-            "from": 0,
-            "to": 240
-          },
           "fees": [
             {
+              "parkTime": {
+                "from": 0,
+                "to": 240
+              },
               "fee": 5,
               "unit": 240
             }
           ]
-        },
+        }
       ],
       "Fri": [
         {
           "from": 0,
           "to": 6,
-          "parkTime": {
-            "from": 0,
-            "to": 360
-          },
           "fees": [
             {
+              "parkTime": {
+                "from": 0,
+                "to": 360
+              },
               "fee": 5,
               "unit": 360
             }
           ]
         },
         {
-          "from":6,
+          "from": 6,
           "to": 20,
           "fees": [
-            { 
+            {
               "parkTime": {
                 "from": 0,
                 "to": 99
               },
               "fee": 1.5,
               "unit": 50
-            }, 
-            { 
+            },
+            {
               "parkTime": {
                 "from": 100,
                 "to": 199
@@ -341,15 +358,15 @@
               "fee": 3,
               "unit": 99
             },
-            { 
+            {
               "parkTime": {
                 "from": 200,
                 "to": 299
               },
               "fee": 3,
               "unit": 99
-            }, 
-            { 
+            },
+            {
               "parkTime": {
                 "from": 300,
                 "to": 1440
@@ -362,46 +379,46 @@
         {
           "from": 20,
           "to": 24,
-          "parkTime": {
-            "from": 0,
-            "to": 240
-          },
           "fees": [
             {
+              "parkTime": {
+                "from": 0,
+                "to": 240
+              },
               "fee": 5,
               "unit": 240
             }
           ]
-        },
+        }
       ],
       "Sat": [
         {
           "from": 0,
           "to": 6,
-          "parkTime": {
-            "from": 0,
-            "to": 360
-          },
           "fees": [
             {
+              "parkTime": {
+                "from": 0,
+                "to": 360
+              },
               "fee": 5,
               "unit": 360
             }
           ]
         },
         {
-          "from":6,
+          "from": 6,
           "to": 20,
           "fees": [
-            { 
+            {
               "parkTime": {
                 "from": 0,
                 "to": 99
               },
               "fee": 2,
               "unit": 50
-            }, 
-            { 
+            },
+            {
               "parkTime": {
                 "from": 100,
                 "to": 199
@@ -409,15 +426,15 @@
               "fee": 4,
               "unit": 99
             },
-            { 
+            {
               "parkTime": {
                 "from": 200,
                 "to": 299
               },
               "fee": 4,
               "unit": 99
-            }, 
-            { 
+            },
+            {
               "parkTime": {
                 "from": 300,
                 "to": 1440
@@ -430,46 +447,46 @@
         {
           "from": 20,
           "to": 24,
-          "parkTime": {
-            "from": 0,
-            "to": 240
-          },
           "fees": [
             {
+              "parkTime": {
+                "from": 0,
+                "to": 240
+              },
               "fee": 5,
               "unit": 240
             }
           ]
-        },
+        }
       ],
       "Sun": [
         {
           "from": 0,
           "to": 6,
-          "parkTime": {
-            "from": 0,
-            "to": 360
-          },
           "fees": [
             {
+              "parkTime": {
+                "from": 0,
+                "to": 360
+              },
               "fee": 5,
               "unit": 360
             }
           ]
         },
         {
-          "from":6,
+          "from": 6,
           "to": 20,
           "fees": [
-            { 
+            {
               "parkTime": {
                 "from": 0,
                 "to": 99
               },
               "fee": 1.5,
               "unit": 50
-            }, 
-            { 
+            },
+            {
               "parkTime": {
                 "from": 100,
                 "to": 199
@@ -477,15 +494,15 @@
               "fee": 3,
               "unit": 99
             },
-            { 
+            {
               "parkTime": {
                 "from": 200,
                 "to": 299
               },
               "fee": 3,
               "unit": 99
-            }, 
-            { 
+            },
+            {
               "parkTime": {
                 "from": 300,
                 "to": 1440
@@ -498,17 +515,17 @@
         {
           "from": 20,
           "to": 24,
-          "parkTime": {
-            "from": 0,
-            "to": 240
-          },
           "fees": [
             {
+              "parkTime": {
+                "from": 0,
+                "to": 240
+              },
               "fee": 5,
               "unit": 240
             }
           ]
-        },
+        }
       ]
     }
   }
