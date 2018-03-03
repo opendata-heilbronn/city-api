@@ -50,10 +50,19 @@ describe("test", () => {
 
     it("should check is open stadtgalerie", () => {
         const request = {
-            fromTime: new Date(2018, 2, 2, 15, 0, 0),
+            fromTime: new Date(2018, 2, 3, 15, 0, 0),
             duration: 150,
-            carPark: "stadtgalerie"
+            carPark: "kiliansplatz"
         };
-        assert.equal(checkIsOpen.checkIsOpen(request), false);
+        assert.equal(checkIsOpen.checkIsOpen(request).open, true);
+    });
+
+    it("should check is open stadtgalerie", () => {
+        const request = {
+            fromTime: new Date(2018, 2, 3, 4, 0, 0),
+            duration: 150,
+            carPark: "kiliansplatz"
+        };
+        assert.equal(checkIsOpen.checkIsOpen(request).open, false);
     });
 });

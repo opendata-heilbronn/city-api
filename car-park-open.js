@@ -1,5 +1,8 @@
 const carParks = require("./car-parks.json");
-const moment = require("moment");
+const Moment = require('moment');
+const MomentRange = require('moment-range');
+
+const moment = MomentRange.extendMoment(Moment);
 
 function checkIsOpen(request) {
     const fromTime = moment(request.fromTime);
@@ -7,36 +10,69 @@ function checkIsOpen(request) {
     const dow = fromTime.format("ddd");
     const duration = request.duration;
 
+    const context = {
+        open: false
+    };
+
     //console.log('data JSON ', carParks);
     console.log('request', request);
 
-    const carPark = carParks.find(function(element) { 
+    const data = carParks.find(function(element) {  
+        const open = element.open[0].times.from;
+        var close = element.open[0].times.to;
         
-        return element.id == request.carPark  && element.open[0].days.indexOf(dow) != -1 && moment().hour(element.open.times.from) <= fromTime
-        console.log('elemt', element);
-        console.log('request.carParks', request.carPark);
-        console.log('element.id ', element.id );
-        
-        
-        const openTime = moment().hour(element.open.times.from)
-        const endTime = moment().hour(element.open.times.to)
+        if (close < 10) {
+            close = close + 24;
+        }
 
-        console.log('start end', openTime, endTime);
-        
+        const hoursOpen = close - open;
 
-        // Tag && Uhr Zeit Prüfen
+        var timeOpen = moment();
         
-        //return element.id == request.carParks && element.open.days.indexOf(dow) != -1 && openTime <= fromTime && endTime >= parkEnd;
-        //return element.id == request.carParks && element.days.indexOf(dow) != -1 && element.times.from >= fromTime && element.times.to < parkEnd        
+        timeOpen.hour(open) 
+        timeOpen.minute(0)
+        timeOpen.second(0)
+        timeOpen.millisecond(0)
+
+        console.log('timeOpen', timeOpen);
+
+        const timeClose = timeOpen.add('hours', hoursOpen);
+        
+        console.log(element.id);
+        console.log('hoursOpen', hoursOpen);
+        console.log('timeClose', timeClose);
+        console.log('fromTime', fromTime);
+
+        const range = moment.range(timeOpen, timeClose);
+   
+        console.log('range', fromTime.within(range)); // true
+        
+        return element.id == request.carPark;
+        //return element.id == request.carPark && element.open[0].days.indexOf(dow) != -1 && timeOpen <= fromTime 
     });
 
-    const open = carPark.open.find(function(element){
-        console.log('times');
+    console.log('open', data );
+
+    if (data === undefined) {
+        console.log('nicht gefunden');
         
-    });
-    console.log('data', data );
+        context.open = false;
+    } else {
+        console.log('gefunden');
+        
+        context.open = true;
+    }
     
-    return data 
+    return {open: context.open};
 }
+
+/*function calcTimeOpen(open, close) {
+    if (close < 10) {
+        close += 24;
+    }
+    console.log('call open');
+    
+    return close - open;
+}*/
 
 module.exports = {checkIsOpen};
